@@ -1,8 +1,14 @@
+// tests/example.test.js
 const puppeteer = require('puppeteer');
 
 (async () => {
-    // Launch headless Chromium
-    const browser = await puppeteer.launch();
+    // Launch headless Chromium without sandbox
+    const browser = await puppeteer.launch({
+        args: [
+            '--no-sandbox',
+            '--disable-setuid-sandbox'
+        ]
+    });
     const page = await browser.newPage();
 
     // Navigate and take a screenshot
