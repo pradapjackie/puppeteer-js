@@ -37,8 +37,8 @@ jobs:
             libxtst6 \
             libnss3 \
             libglib2.0-0 \
-            libgtk-3-0 \
-            libasound2 \
+            libgtk-3-0t64 \
+            libasound2t64 \
             libxrandr2 \
             libpangocairo-1.0-0 \
             libatk1.0-0 \
